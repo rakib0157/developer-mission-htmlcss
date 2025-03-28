@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid;
 }
 
 .brand>h2 {
@@ -45,4 +44,25 @@ body {
     border-radius: 8px;
     opacity: 0.8;
     background: transparent;
+}
+.header-banner{
+    background: url('../assets/Hero-bg.png');
+    max-width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.header-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/Hero-bg.png');
+    opacity: 0.8;
+    z-index: -1;
 }
