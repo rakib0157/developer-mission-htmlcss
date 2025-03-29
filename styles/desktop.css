@@ -14,7 +14,9 @@ body {
 #Inspiration-section,
 #why-web-dev-section,
 #current-target-section,
-#next-target-section {
+#next-target-section,
+#form-section,
+.footer-container {
   max-width: 80%;
   margin: 0 auto;
 }
@@ -239,17 +241,17 @@ body {
 /* current card ind bg color  */
 /************* current target section end  *************/
 /************* Next target section start  *************/
-#next-target-section{
+#next-target-section {
   margin-top: 110px;
   margin-bottom: 40px;
 }
-.next-target-card-container{
+.next-target-card-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-top: 48px;
 }
-.next-target-card{
+.next-target-card {
   border: 1px solid rgba(13, 19, 33, 0.15);
   border-radius: 16px;
   padding: 24px;
@@ -258,3 +260,82 @@ body {
   gap: 24px;
 }
 /************* Next target section end  *************/
+#form-section {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  border-radius: 16px;
+  background: url("../assets/handshake.jpg"), rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 313px;
+}
+.form-section-container {
+  padding: 64px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-heading,
+.form-p {
+  color: #ffffff;
+}
+.form-p {
+  opacity: 0.7;
+}
+.homepage-form {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.text-field {
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  width: 548px;
+  height: 57px;
+  padding: 19px 20px;
+  resize: none;
+}
+textarea::placeholder {
+  color: rgba(13, 19, 33, 0.4);
+}
+input[type="submit"] {
+  color: rgb(13, 19, 33);
+  background-color: #ffffff;
+  border: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 17px 20px;
+  border-radius: 8px;
+}
+#footer {
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.03);
+  height: 100px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+.footer-heading{
+  color: rgb(13, 19, 33);
+font-family: Azeret Mono;
+font-size: 20px;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0%;
+}
+.icon-container{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
