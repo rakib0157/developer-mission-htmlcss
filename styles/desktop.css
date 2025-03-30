@@ -16,12 +16,16 @@ body {
 #current-target-section,
 #next-target-section,
 #form-section,
-.footer-container {
+.footer-container,
+.upper-header {
   max-width: 80%;
   margin: 0 auto;
 }
+:root {
+  --primary-color: rgb(13, 19, 33);
+}
 .section-heading {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 32px;
   font-weight: 800;
   line-height: 37px;
@@ -29,30 +33,31 @@ body {
   margin-bottom: 24px;
 }
 .section-heading-p {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   margin: 0px 100px;
 }
+/* css color variable code start */
+
+/* css color variable code end */
 /************* common css code end  *************/
 /************* Top header area code start  *************/
 .upper-header {
-  max-width: 80%;
   padding: 36px 0px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .brand > h2 {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 28px;
   font-weight: 800;
 }
 .resume-btn {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 600;
   padding: 17px 24px;
@@ -92,16 +97,16 @@ body {
 }
 
 .contact-me-btn {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
   border-radius: 8px;
-  background: rgb(13, 19, 33);
+  background-color: var(--primary-color);
   padding: 21px 24px;
   border: 0;
 }
 .banner-text-container {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   text-align: center;
   padding: 0px 200px;
 }
@@ -163,13 +168,13 @@ body {
   margin-bottom: 16px;
 }
 .why-web-dev-card-p {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
 }
 .why-dev-card-btn {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 600;
   line-height: 23px;
@@ -209,21 +214,21 @@ body {
   border-radius: 16px;
 }
 .current-card-heading {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   margin-top: 24px;
   margin-bottom: 8px;
   font-size: 24px;
   font-weight: 800;
 }
 .current-card-p {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   margin-bottom: 24px;
 }
 .current-card-btn {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   font-size: 16px;
   font-weight: 700;
   text-decoration-line: underline;
@@ -252,7 +257,7 @@ body {
   margin-top: 48px;
 }
 .next-target-card {
-  border: 1px solid rgba(13, 19, 33, 0.15);
+  border: 1px solid rgba(13, 19, 33, 0.1);
   border-radius: 16px;
   padding: 24px;
   display: flex;
@@ -260,6 +265,7 @@ body {
   gap: 24px;
 }
 /************* Next target section end  *************/
+/************* form section start  *************/
 #form-section {
   margin-top: 50px;
   margin-bottom: 80px;
@@ -292,9 +298,9 @@ body {
   gap: 16px;
 }
 .text-field {
-  border: 1px solid rgba(13, 19, 33, 0.15);
+  border: 1px solid rgba(13, 19, 33, 0.1);
   border-radius: 8px;
-  background: rgb(255, 255, 255);
+  background: #ffffff;
   width: 548px;
   height: 57px;
   padding: 19px 20px;
@@ -304,38 +310,37 @@ textarea::placeholder {
   color: rgba(13, 19, 33, 0.4);
 }
 input[type="submit"] {
-  color: rgb(13, 19, 33);
+  color: var(--primary-color);
   background-color: #ffffff;
   border: 0px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 23px;
-  letter-spacing: 0%;
-  text-align: center;
   padding: 17px 20px;
   border-radius: 8px;
 }
+/************* form section end  *************/
+/************* footer start  *************/
+
 #footer {
   border-radius: 16px;
   background: rgba(13, 19, 33, 0.03);
   height: 100px;
 }
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0px;
 }
-.footer-heading{
-  color: rgb(13, 19, 33);
-font-family: Azeret Mono;
-font-size: 20px;
-font-weight: 600;
-line-height: 23px;
-letter-spacing: 0%;
+.footer-heading {
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 600;
 }
-.icon-container{
+.icon-container {
   display: flex;
   align-items: center;
   gap: 24px;
 }
+
+/************* footer end  *************/
